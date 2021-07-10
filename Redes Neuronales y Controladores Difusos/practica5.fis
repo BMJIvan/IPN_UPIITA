@@ -1,0 +1,39 @@
+[System]
+Name='practica5'
+Type='mamdani'
+Version=2.0
+NumInputs=1
+NumOutputs=1
+NumRules=5
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='error'
+Range=[-20 20]
+NumMFs=5
+MF1='EGm':'trapmf',[-29 -21 -19 -11]
+MF2='EMm':'trimf',[-20 -10 0]
+MF3='EZ':'trimf',[-1 0 1]
+MF4='EMp':'trimf',[0 10 20]
+MF5='EGp':'trapmf',[11 19 21 29]
+
+[Output1]
+Name='fuerza'
+Range=[-100 100]
+NumMFs=5
+MF1='FGm':'trapmf',[-145 -105 -95 -55]
+MF2='FMm':'trimf',[-100 -50 0]
+MF3='FZ':'trimf',[-5 0 5]
+MF4='FMp':'trimf',[0 50 100]
+MF5='FGp':'trapmf',[55 95 105 145]
+
+[Rules]
+1, 1 (1) : 1
+2, 2 (1) : 1
+3, 3 (1) : 1
+4, 4 (1) : 1
+5, 5 (1) : 1

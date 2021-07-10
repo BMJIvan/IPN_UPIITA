@@ -1,0 +1,20 @@
+1 salidas
+2 reporte
+3 matlab grafica
+4 giro carrito
+5 motor simple
+6 mimo
+7 superficie control
+8 graf transferencia
+9 neurona lab
+10 neurona .5.5
+11 lego rostros 00 01 10 11
+12 reporte 2 personas
+13 puntos silla mesa cama 
+14 13 en labview
+15 4 personas
+16 letras
+17 memoria
+18 memoria 2 personas
+19 colores
+

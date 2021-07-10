@@ -1,0 +1,6 @@
+clc
+close all
+clear all
+
+FIS=readfis('E:\semestre 5\sistemas neurodifusos\practica1f.fis')
+v=eva

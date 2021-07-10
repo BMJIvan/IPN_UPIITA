@@ -1,0 +1,45 @@
+[System]
+Name='practica6prueba'
+Type='mamdani'
+Version=2.0
+NumInputs=1
+NumOutputs=1
+NumRules=7
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='ERROR'
+Range=[-3.2 3.2]
+NumMFs=7
+MF1='EGm':'trapmf',[-3.22 -3.22 -2.46 -2.09100529100529]
+MF2='EMm':'trimf',[-2.61058201058201 -1.81058201058201 -0.61058201058201]
+MF3='EIm':'trimf',[-1.8 -1 0]
+MF4='Z':'trimf',[-0.1 0 0.1]
+MF5='EI':'trimf',[0 1 1.8]
+MF6='EM':'trimf',[0.542857142857143 1.51285714285714 2.74285714285714]
+MF7='EG':'trapmf',[2.14179894179894 2.7 3.22 3.22]
+
+[Output1]
+Name='TAO'
+Range=[-70 70]
+NumMFs=7
+MF1='TGm':'trapmf',[-72.6 -72.6 -37.962962962963 -32.8]
+MF2='TMm':'trimf',[-59.5 -21.3 -21]
+MF3='TIm':'trimf',[-42 -6.11111111111111 0]
+MF4='TZ':'trimf',[-3.147 0 2.037]
+MF5='TI':'trimf',[0 21 42]
+MF6='TM':'trimf',[21 42 59.5]
+MF7='TG':'trapmf',[49 59.5 70 70]
+
+[Rules]
+1, 7 (1) : 1
+2, 6 (1) : 1
+3, 5 (1) : 1
+4, 4 (1) : 1
+5, 3 (1) : 1
+6, 2 (1) : 1
+7, 1 (1) : 1

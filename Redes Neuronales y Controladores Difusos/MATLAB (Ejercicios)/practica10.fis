@@ -1,0 +1,49 @@
+[System]
+Name='practica10'
+Type='sugeno'
+Version=2.0
+NumInputs=1
+NumOutputs=2
+NumRules=5
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='input1'
+Range=[-25 25]
+NumMFs=5
+MF1='AGm':'trapmf',[-25 -25 -15 -10]
+MF2='AMm':'trimf',[-15 -10 0]
+MF3='AI':'trimf',[-5 0 5]
+MF4='AM':'trimf',[0 10 15]
+MF5='AG':'trapmf',[10 15 25 25]
+
+[Output1]
+Name='output1'
+Range=[0 1]
+NumMFs=5
+MF1='Ami':'constant',[-90]
+MF2='Mmi':'constant',[-50]
+MF3='zi':'constant',[0]
+MF4='Mi':'constant',[50]
+MF5='Ai':'constant',[90]
+
+[Output2]
+Name='output2'
+Range=[0 1]
+NumMFs=5
+MF1='Amd':'constant',[-90]
+MF2='Mmd':'constant',[-50]
+MF3='Zd':'constant',[0]
+MF4='Md':'constant',[50]
+MF5='Ad':'constant',[90]
+
+[Rules]
+1, 1 5 (1) : 1
+2, 2 4 (1) : 1
+3, 3 3 (1) : 1
+4, 4 2 (1) : 1
+5, 5 1 (1) : 1

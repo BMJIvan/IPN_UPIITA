@@ -1,0 +1,45 @@
+[System]
+Name='practica9tsugeno'
+Type='sugeno'
+Version=2.0
+NumInputs=1
+NumOutputs=1
+NumRules=7
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='input1'
+Range=[-360 360]
+NumMFs=7
+MF1='mf1':'trapmf',[-360 -360 -300 -200]
+MF2='mf2':'trimf',[-300 -200 -100]
+MF3='mf3':'trimf',[-200 -100 0]
+MF4='mf4':'trimf',[-10 0 10]
+MF5='mf5':'trimf',[0 100 200]
+MF6='mf6':'trimf',[100 200 300]
+MF7='mf7':'trapmf',[200 300 360 360]
+
+[Output1]
+Name='output1'
+Range=[0 1]
+NumMFs=7
+MF1='mf1':'constant',[-100]
+MF2='mf2':'constant',[-66.6]
+MF3='mf3':'constant',[-33.3]
+MF4='mf4':'constant',[0]
+MF5='mf5':'constant',[33.3]
+MF6='mf6':'constant',[66.6]
+MF7='mf7':'constant',[100]
+
+[Rules]
+1, 1 (1) : 1
+2, 2 (1) : 1
+3, 3 (1) : 1
+4, 4 (1) : 1
+5, 5 (1) : 1
+6, 6 (1) : 1
+7, 7 (1) : 1
