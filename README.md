@@ -1,1 +1,1 @@
-Este repositorio contiene practicas y ejercicios realizados dentro de la escuela, no me hago responsable por lo que se haga con esta información
+This repo contains practices and exercises done while I was in the university, I don´t take any responsibility for what someone can do with this information
